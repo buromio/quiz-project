@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 2 - Минималистичный</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #fafafa; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .card { background: white; border: 1px solid #eee; border-radius: 12px; padding: 48px; max-width: 520px; width: 100%; }
+  .badge { font-size: 12px; color: #999; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; }
+  h2 { font-size: 22px; color: #111; margin-bottom: 32px; font-weight: 300; line-height: 1.5; }
+  .option { border-bottom: 1px solid #f0f0f0; padding: 20px 0; cursor: pointer; transition: all 0.2s; }
+  .option:last-of-type { border-bottom: none; }
+  .option:hover { padding-left: 12px; }
+  .option-text { font-size: 15px; color: #555; font-weight: 400; }
+  .progress { display: flex; gap: 4px; margin-top: 32px; }
+  .bar { height: 2px; flex: 1; background: #eee; }
+  .bar.active { background: #111; }
+  .label { text-align: center; margin-top: 16px; font-size: 11px; color: #ccc; letter-spacing: 2px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Вопрос 1 из 7</div>
+    <h2>Ты попадаёшь в Гарри Поттер. Какой ты дом?</h2>
+    <div class="option"><span class="option-text">Гриффиндор — смелость и отвага</span></div>
+    <div class="option"><span class="option-text">Пуффендуй — доброта и верность</span></div>
+    <div class="option"><span class="option-text">Когтевран — мудрость и знания</span></div>
+    <div class="option"><span class="option-text">Слизерин — амбиции и хитрость</span></div>
+    <div class="progress">
+      <div class="bar active"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+    <div class="label">СТИЛЬ 2: МИНИМАЛИСТИЧНЫЙ / ЧИСТЫЙ</div>
+  </div>
+</body>
+</html>

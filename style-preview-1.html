@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 1 - Игровой</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Nunito', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .card { background: white; border-radius: 24px; padding: 40px; max-width: 500px; width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+  .badge { display: inline-block; background: #f0e6ff; color: #764ba2; font-weight: 700; font-size: 14px; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; }
+  h2 { font-size: 24px; color: #333; margin-bottom: 24px; font-weight: 900; }
+  .option { display: flex; align-items: center; gap: 12px; background: #f8f7ff; border: 2px solid #e8e0ff; border-radius: 16px; padding: 16px 20px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s; }
+  .option:hover { border-color: #764ba2; background: #f0e6ff; transform: translateY(-2px); }
+  .option-icon { font-size: 28px; }
+  .option-text { font-size: 16px; color: #444; font-weight: 700; }
+  .progress { display: flex; gap: 6px; margin-top: 24px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: #e0d8f0; }
+  .dot.active { background: #764ba2; }
+  .label { text-align: center; margin-top: 16px; font-size: 13px; color: #999; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Вопрос 1 из 7</div>
+    <h2>Ты попадаёшь в Гарри Поттер. Какой ты дом?</h2>
+    <div class="option"><span class="option-icon">🦁</span><span class="option-text">Гриффиндор — смелость и отвага</span></div>
+    <div class="option"><span class="option-icon">🦡</span><span class="option-text">Пуффендуй — доброта и верность</span></div>
+    <div class="option"><span class="option-icon">🦅</span><span class="option-text">Когтевран — мудрость и знания</span></div>
+    <div class="option"><span class="option-icon">🐍</span><span class="option-text">Слизерин — амбиции и хитрость</span></div>
+    <div class="progress">
+      <div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+    <div class="label">СТИЛЬ 1: ИГРОВОЙ / ЦВЕТНОЙ</div>
+  </div>
+</body>
+</html>

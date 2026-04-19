@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 4 - Тёплый</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Source Sans Pro', sans-serif; background: linear-gradient(180deg, #f5e6d3 0%, #e8d5c0 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .card { background: #fffbf5; border-radius: 20px; padding: 44px; max-width: 500px; width: 100%; box-shadow: 0 8px 40px rgba(139,90,43,0.12); }
+  .badge { display: inline-block; background: #f0dcc8; color: #8b5a2b; font-weight: 600; font-size: 13px; padding: 6px 16px; border-radius: 20px; margin-bottom: 18px; }
+  h2 { font-family: 'Playfair Display', serif; font-size: 24px; color: #4a3520; margin-bottom: 28px; font-weight: 700; line-height: 1.4; }
+  .option { display: flex; align-items: center; gap: 12px; background: #faf3ea; border: 1.5px solid #e8d5c0; border-radius: 14px; padding: 16px 20px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s; }
+  .option:hover { border-color: #c4956a; background: #f5e8d8; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(139,90,43,0.08); }
+  .option-icon { font-size: 26px; }
+  .option-text { font-size: 15px; color: #5a3e28; font-weight: 600; }
+  .progress { display: flex; gap: 6px; margin-top: 28px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #e0d0be; }
+  .dot.active { background: #c4956a; }
+  .label { text-align: center; margin-top: 16px; font-size: 12px; color: #b89a7a; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Вопрос 1 из 7</div>
+    <h2>Ты попадаёшь в Гарри Поттер. Какой ты дом?</h2>
+    <div class="option"><span class="option-icon">🦁</span><span class="option-text">Гриффиндор — смелость и отвага</span></div>
+    <div class="option"><span class="option-icon">🦡</span><span class="option-text">Пуффендуй — доброта и верность</span></div>
+    <div class="option"><span class="option-icon">🦅</span><span class="option-text">Когтевран — мудрость и знания</span></div>
+    <div class="option"><span class="option-icon">🐍</span><span class="option-text">Слизерин — амбиции и хитрость</span></div>
+    <div class="progress">
+      <div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+    <div class="label">СТИЛЬ 4: ТЁПЛЫЙ / УЮТНЫЙ</div>
+  </div>
+</body>
+</html>

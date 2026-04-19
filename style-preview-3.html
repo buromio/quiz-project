@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 3 - Смелый</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Space Grotesk', sans-serif; background: #0a0a0a; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .card { background: #111; border: 1px solid #333; border-radius: 16px; padding: 40px; max-width: 500px; width: 100%; }
+  .badge { display: inline-block; background: #ff6b35; color: #000; font-weight: 700; font-size: 12px; padding: 6px 14px; border-radius: 4px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+  h2 { font-size: 26px; color: #fff; margin-bottom: 28px; font-weight: 700; line-height: 1.3; }
+  .option { display: flex; align-items: center; gap: 14px; background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; cursor: pointer; transition: all 0.2s; }
+  .option:hover { border-color: #ff6b35; background: #1f1510; }
+  .option-icon { font-size: 24px; }
+  .option-text { font-size: 15px; color: #ccc; font-weight: 600; }
+  .progress { display: flex; gap: 4px; margin-top: 28px; }
+  .bar { height: 3px; flex: 1; background: #333; border-radius: 2px; }
+  .bar.active { background: #ff6b35; }
+  .label { text-align: center; margin-top: 16px; font-size: 12px; color: #555; text-transform: uppercase; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Вопрос 1 из 7</div>
+    <h2>Ты попадаешь в Хогвартс. Какой ты выберешь факультет?</h2>
+    <div class="option"><span class="option-icon">🦁</span><span class="option-text">Гриффиндор — смелость и отвага</span></div>
+    <div class="option"><span class="option-icon">🦡</span><span class="option-text">Пуффендуй — доброта и верность</span></div>
+    <div class="option"><span class="option-icon">🦅</span><span class="option-text">Когтевран — мудрость и знания</span></div>
+    <div class="option"><span class="option-icon">🐍</span><span class="option-text">Слизерин — амбиции и хитрость</span></div>
+    <div class="progress">
+      <div class="bar active"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+    <div class="label">СТИЛЬ 3: СМЕЛЫЙ / ДРАМАТИЧНЫЙ</div>
+  </div>
+</body>
+</html>
