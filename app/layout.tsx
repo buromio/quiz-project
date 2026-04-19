@@ -4,7 +4,7 @@ import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
 
